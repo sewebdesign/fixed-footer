@@ -1,0 +1,13 @@
+body:not(.sqs-edit-mode-active) .fixed-footer {
+  position: sticky!important;
+  bottom: 0!important;
+}
+body:not(.sqs-edit-mode-active) #page {
+  min-height: 100vh;
+}
+#page:has(.system-page) {
+  background-color: var(--siteBackgroundColor);
+}
+#page:has(.system-page) + #footer-sections .page-section:first-of-type {
+  padding-top: 0!important;
+}
